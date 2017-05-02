@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<title>Todo List</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">  		
+	</head> 	  
+	<body>
+		<div class="main_container">
+			<h1>Список задач</h1>
+
+			<div class="ref">
+				Исходный код на <a href="https://github.com/aleksey-nsk/todo_list" target="_blank"><b>GitHub</b></a>
+				<hr>
+			</div>
+
+			<!-- Нужно сверстать форму добавления новой задачи, которая
+			и является корневым элементом вида AddTask.
+			Видим что action пустой, потому что нам пока не нужно
+			ничего отправлять на сервер: -->
+			<form id="addTask" action="">
+				<input type="text" placeholder="Ваша новая задача">
+				<br>
+				<input type="submit" value="Добавить" class="add_button">
+			</form>
+			
+			<div class="tasks">
+				<script type="text/template" id="taskTemplate">
+					<span><b><%= title %><b></span>
+					<br>
+					<button class="edit">Редактировать</button>
+					<button class="delete">Удалить</button> 
+				</script>
+			</div>
+		</div> <!-- /main_container --> 
+		
+		<!-- Важно соблюдать именно такой порядок подключения, так как
+		Backbone зависит от Underscore и без него работать не будет: -->
+		<script type="text/javascript" src="js/jquery.js"></script> 
+		<script type="text/javascript" src="js/underscore.js"></script>
+		<script type="text/javascript" src="js/backbone.js"></script>
+		<script type="text/javascript" src="js/main.js"></script> 
+	</body> 
+</html>  

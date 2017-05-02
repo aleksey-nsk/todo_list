@@ -1,0 +1,88 @@
+body {
+	/* border: 1px solid Green; */
+}
+
+.main_container {
+	border: 3px solid Silver;
+	width: 450px; 	 
+	margin: auto; /* выравниваем по центру */
+}
+
+.main_container h1 {
+	/* border: 1px solid Orange; */
+	margin-left: 5px;
+	margin-right: 5px;
+	text-align: center;
+	font-family: "Comic Sans MS";
+}
+
+.main_container .ref {
+	/* border: 1px solid Red; */
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 15px;
+	font-family: "Comic Sans MS";
+	font-size: 14px;
+	text-align: center;
+}
+
+.main_container .ref a {
+	color: OrangeRed;
+	text-decoration: none;
+}
+
+.main_container .ref a:hover {
+	text-decoration: underline;
+}
+
+.main_container #addTask {
+	/* border: 1px solid Green; */
+	margin-left: 140px;
+	margin-right: 5px;
+}
+
+.main_container #addTask .add_button {
+	border: 1px solid SteelBlue;
+	padding: 5px;
+	background-color: SteelBlue;
+	color: White;
+	margin-top: 5px;
+}
+
+.main_container #addTask .add_button:hover { 
+	background-color: Blue;
+}
+
+.main_container .tasks {
+	/* border: 1px solid Orange; */
+	margin: 5px;
+}
+
+.main_container .tasks span {
+	/* border: 1px solid Red; */
+	font-family: "Comic Sans MS";
+}
+
+.main_container .tasks .edit {
+	border: 1px solid MediumSeaGreen;
+	margin-top: 5px;
+	margin-bottom: 25px;
+	padding: 5px;
+	background-color: MediumSeaGreen;
+	color: White;
+}
+
+.main_container .tasks .edit:hover {
+	background-color: Green;
+}
+
+.main_container .tasks .delete {
+	border: 1px solid Brown;
+	padding: 5px;
+	background-color: Brown;
+	color: White;
+}
+
+.main_container .tasks .delete:hover {
+	background-color: Red;
+}
